@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AZTEC Reader</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>AZTEC Reader</h1>
+    <p class="lead">Offline-ready dekoder kodów 2D (priorytet: AZTEC) z PDF.</p>
+
+    <section class="card">
+      <div class="row">
+        <label class="toggle">
+          <input type="checkbox" id="onlyAztec" checked />
+          <span>Tylko AZTEC</span>
+        </label>
+        <span class="limits" id="limits"></span>
+      </div>
+
+      <div id="dropzone" class="dropzone">
+        <p>Przeciągnij i upuść PDF-y tutaj lub wybierz z dysku.</p>
+        <input type="file" id="fileInput" accept="application/pdf" multiple />
+      </div>
+      <button id="uploadBtn" class="primary">Wyślij do dekodowania</button>
+    </section>
+
+    <section class="card">
+      <h2>Joby</h2>
+      <div id="jobs"></div>
+    </section>
+
+    <section class="card">
+      <h2>Wyniki</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plik</th>
+            <th>Strona</th>
+            <th>Format</th>
+            <th>Tekst</th>
+            <th>Akcja</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
