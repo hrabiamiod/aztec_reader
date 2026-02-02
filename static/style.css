@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.lead {
+  margin-top: 0;
+  color: #444;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.limits {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.dropzone {
+  border: 2px dashed #8b8bba;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  background: #fafaff;
+  margin-bottom: 12px;
+}
+
+.dropzone.active {
+  background: #eef0ff;
+}
+
+.dropzone input[type='file'] {
+  margin-top: 12px;
+}
+
+.primary {
+  border: none;
+  background: #5a3bff;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.job {
+  border: 1px solid #e2e2ee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.badge.queued,
+.badge.started {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge.finished {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.progress {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 8px;
+  margin: 8px 0;
+}
+
+.bar {
+  height: 100%;
+  background: #5a3bff;
+  width: 0;
+}
+
+.job-actions a {
+  margin-right: 12px;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #eee;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.text-cell {
+  display: inline-block;
+  max-width: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copy-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
